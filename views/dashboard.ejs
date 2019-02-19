@@ -1,0 +1,93 @@
+<%- include head.ejs %>
+<%- include header.ejs %>
+
+    <div class="container" id="dashboard" style='margin-top: 300px;'>
+
+        <div class="row">
+
+
+            <div class="col-sm-12 col-md-offset-2 col-md-8" id="contenuDashboard">
+
+                <form action="/dashboard" enctype="multipart/form-data" method="post" role="form">
+
+                        
+                    <h1>Ajouter un événement</h1>
+
+                    <p><stong>ATTENTION !</stong> Le copier-coller ne marche pas à cause de la touche "entrée". Pour ne pas avoir de problèmes, il faut refaire soi-même au clavier, les appuis sur la touche "entrée".</p>
+
+
+
+                        <fieldset>
+
+                            <label>Titre événement</label>
+                            <input id="titre" name="titre" type="text" placeholder="Le titre de l'événement" required="required">
+
+                            <label>Description</label>
+                            <textarea id="descriptionVisible" name="descriptionVisible" placeholder="La description de l'événement" rows="3" required="required"></textarea>
+
+                            <textarea id="description" name="description" style="display: none;"> </textarea>
+
+                            <label>Date</label>
+                            <input type="date" name="date">
+
+                            <label>Heure début</label>
+                            <input type="time" name="time" required="required">
+
+                            <label>Durée</label>
+                            <input type="text" name="end" id="end">
+
+                            <label>Organisateur</label>
+                            <select name="organisateur" id="organisateur">
+                                <option value="Fablab">Fablab</option>
+                                <option value="Bookkafé">Bookkafé</option>
+                                <option value="Smart-City">Smart-City</option>
+                            </select>
+
+                            <label>Lien événement Facebook</label>
+                            <input id="lienFacebook" name="lienFacebook" type="text" placeholder="le lien complet vers l'événement Facebook">
+                            
+                            
+                        
+                        </fieldset>
+                        <label>Photo de l'événement</label>
+                        <input type="file" name="photo"/>
+                        <input id="submitButton" class="btn btn-primary" type="submit" value="Enregistrer les modifications"/>
+                        
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+    var nmbrBR = 0;
+    $('#descriptionVisible').on('keypress',function(e){
+        if(e.keyCode === 13){
+            var str = $('#descriptionVisible').val();
+            str = str + "</br>";
+            var longueur = $('#description').val().length-1-4*nmbrBR;
+            console.log(longueur);
+            nmbrBR ++;
+            if (longueur < 0) {
+                $('#description').val(str);  
+            } else {
+                str = str.substring(longueur);
+                str = $('#description').val() + str;
+                $('#description').val(str); 
+            }
+            
+            
+        }
+    });
+    </script>
+
+

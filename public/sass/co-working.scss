@@ -1,0 +1,182 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 400;
+    src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Fabrique;
+    src: url("../fonts/UniNeue-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 700;
+    src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+
+
+
+$font-family: 'Fabrique', sans-serif;
+$vert : rgb(199,211,52);
+$rose : #fc466b;
+$bleu: rgb(73,159,149);
+
+
+
+#coworkingCSS {
+
+    margin-top: 50px;
+
+    h1 {
+        font-weight: 400px;
+    }
+
+    .photoCouverture {
+        height: 200px;
+        background-image: url('/img/couv coworking-01.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section1 {
+
+        margin-top: 40px;
+
+        .logoCouleur {
+            height: 150px;
+            background-image: url('/img/page accueil - logo-01.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 20px;
+        }
+
+        .left {
+            text-align: center;
+
+            .couleur {
+                color: white;
+                padding: 10px;
+                margin-top: 10px;
+
+                background-color: $bleu;
+
+                p {
+                    margin: 0px;
+                }
+            }
+        }
+
+        span {
+        	color: $bleu;
+        }
+
+    }
+
+    #section2 {
+
+        .row {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .bonPlan {
+
+            h2 {
+                border-bottom: solid 3px white;
+            }
+
+            .couleur {
+                color: white;
+                padding: 10px 30px;
+                height: 178px;
+                text-align: center;
+
+            }
+
+            .vert {
+                background-color: $vert;
+            }
+
+            .bleu {
+                background-color: $bleu;
+            }
+        }
+
+        .horaires {
+            background-color: $bleu;
+            color: white;
+            margin-top: 30px;
+            padding: 20px;
+
+            p {
+                margin: 0px;
+            }
+        }
+    }
+
+    .franchi {
+        margin-top: 40px; 
+        margin-bottom: 30px;
+
+        h2 {
+            color: $bleu;
+
+        }
+
+        .row {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+
+        .bulle {
+
+            text-align: center;
+
+
+        }
+
+        .testimonial {
+            padding: 20px 50px;
+            background-color: $bleu;
+            h2, h3, p {
+                color: white;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 992px)
+    {
+        margin-top: 120px;
+
+        .photoCouverture {
+            height: 500px;
+        }
+        #section1 {
+            .logoCouleur {
+                height: 250px;
+            }
+        }
+        #section2 {
+            
+            .horaires {
+                margin-top: 0px;
+            }
+        }
+        
+    }
+
+
+}

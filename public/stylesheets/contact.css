@@ -1,0 +1,168 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 33, ../sass/contact.scss */
+#contactCSS {
+  margin-top: 50px;
+}
+/* line 37, ../sass/contact.scss */
+#contactCSS h1 {
+  font-weight: 400px;
+}
+/* line 41, ../sass/contact.scss */
+#contactCSS .photoCouverture {
+  height: 200px;
+  background-image: url("/img/couv contact-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 49, ../sass/contact.scss */
+#contactCSS #section1 {
+  margin-top: 40px;
+}
+/* line 53, ../sass/contact.scss */
+#contactCSS #section1 .logoCouleur {
+  height: 150px;
+  background-image: url("/img/page accueil - logo-01.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/contact.scss */
+#contactCSS #section1 .left {
+  text-align: center;
+}
+/* line 65, ../sass/contact.scss */
+#contactCSS #section1 .left img {
+  height: 120px;
+}
+/* line 69, ../sass/contact.scss */
+#contactCSS #section1 .left .couleur {
+  color: white;
+  padding: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #c3d500;
+}
+/* line 77, ../sass/contact.scss */
+#contactCSS #section1 .left .couleur p {
+  margin: 0px;
+}
+/* line 84, ../sass/contact.scss */
+#contactCSS #section1 button {
+  color: white;
+  padding: 12px 40px 4px 40px;
+  background-color: #c3d500;
+  border: none;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+/* line 97, ../sass/contact.scss */
+#contactCSS #section2 {
+  margin-bottom: 50px;
+}
+/* line 101, ../sass/contact.scss */
+#contactCSS #section2 .row {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* line 106, ../sass/contact.scss */
+#contactCSS #section2 img {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 112, ../sass/contact.scss */
+#contactCSS #section2 h2 {
+  color: #c3d500;
+}
+/* line 121, ../sass/contact.scss */
+#contactCSS h3 {
+  margin-top: 50px;
+}
+/* line 128, ../sass/contact.scss */
+#contactCSS fieldset {
+  margin-top: 30px;
+}
+/* line 132, ../sass/contact.scss */
+#contactCSS fieldset label {
+  display: block;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+/* line 138, ../sass/contact.scss */
+#contactCSS fieldset input {
+  display: block;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+/* line 149, ../sass/contact.scss */
+#contactCSS fieldset textarea {
+  display: block;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 15px;
+  background-color: #f0f0f0;
+  border: none;
+  height: 250px;
+  margin-bottom: 30px;
+}
+/* line 161, ../sass/contact.scss */
+#contactCSS fieldset .boutonEnvoi {
+  background-color: #c3d500;
+  font-weight: 400;
+  color: white;
+  font-size: 2rem;
+}
+@media screen and (min-width: 992px) {
+  /* line 33, ../sass/contact.scss */
+  #contactCSS {
+    margin-top: 120px;
+  }
+  /* line 173, ../sass/contact.scss */
+  #contactCSS .photoCouverture {
+    height: 500px;
+  }
+  /* line 177, ../sass/contact.scss */
+  #contactCSS #section1 .logoCouleur {
+    height: 250px;
+  }
+  /* line 183, ../sass/contact.scss */
+  #contactCSS #section2 .horaires {
+    margin-top: 0px;
+  }
+  /* line 188, ../sass/contact.scss */
+  #contactCSS #section2 .bonPlan .negatif {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  /* line 198, ../sass/contact.scss */
+  #contactCSS .left {
+    text-align: center;
+  }
+  /* line 201, ../sass/contact.scss */
+  #contactCSS .left img {
+    margin-top: 20px;
+  }
+}

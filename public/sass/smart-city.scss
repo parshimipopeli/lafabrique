@@ -1,0 +1,137 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 400;
+    src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Fabrique;
+    src: url("../fonts/UniNeue-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 700;
+    src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+
+
+
+$font-family: 'Fabrique', sans-serif;
+$vert : rgb(199,211,52);
+$rose : #fc466b;
+$bleu: #3f5efb;
+
+
+
+#smartCityCSS {
+
+    margin-top: 50px;
+
+    h1 {
+        font-weight: 400px;
+    }
+
+    .photoCouverture {
+        height: 200px;
+        background-image: url('/img/couv smart city-01.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section1 {
+
+        margin-top: 40px;
+
+        .logoCouleur {
+            height: 150px;
+            background-image: url('/img/page accueil - logo-01.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 20px;
+        }
+
+        .B {
+            text-align: center;
+        }
+
+        span {
+        	color: $vert;
+        }
+
+    }
+
+    .pictos {
+        text-align: center;
+
+        img {
+            margin: 30px;
+        }
+    }
+
+    .horaires {
+        background-color: $vert;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    #sectionLogos {
+        text-align: center;
+
+        .picto {
+            height: 150px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+        .logoLogos {
+            display: none;
+        }
+
+    }
+
+    @media screen and (min-width: 992px)
+    {
+        margin-top: 120px;
+
+        .photoCouverture {
+            height: 500px;
+        }
+        #section1 {
+            .logoCouleur {
+                height: 250px;
+            }
+        }
+        #sectionLogos {
+            text-align: left;
+
+            .logoLogos {
+                display: block;
+                text-align: center;
+            }
+
+            .picto {
+                text-align: center;
+            }
+        }
+        
+    }
+
+
+}

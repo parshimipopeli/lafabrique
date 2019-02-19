@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 33, ../sass/co-working.scss */
+#coworkingCSS {
+  margin-top: 50px;
+}
+/* line 37, ../sass/co-working.scss */
+#coworkingCSS h1 {
+  font-weight: 400px;
+}
+/* line 41, ../sass/co-working.scss */
+#coworkingCSS .photoCouverture {
+  height: 200px;
+  background-image: url("/img/couv coworking-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 49, ../sass/co-working.scss */
+#coworkingCSS #section1 {
+  margin-top: 40px;
+}
+/* line 53, ../sass/co-working.scss */
+#coworkingCSS #section1 .logoCouleur {
+  height: 150px;
+  background-image: url("/img/page accueil - logo-01.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/co-working.scss */
+#coworkingCSS #section1 .left {
+  text-align: center;
+}
+/* line 65, ../sass/co-working.scss */
+#coworkingCSS #section1 .left .couleur {
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #499f95;
+}
+/* line 72, ../sass/co-working.scss */
+#coworkingCSS #section1 .left .couleur p {
+  margin: 0px;
+}
+/* line 78, ../sass/co-working.scss */
+#coworkingCSS #section1 span {
+  color: #499f95;
+}
+/* line 86, ../sass/co-working.scss */
+#coworkingCSS #section2 .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 95, ../sass/co-working.scss */
+#coworkingCSS #section2 .bonPlan h2 {
+  border-bottom: solid 3px white;
+}
+/* line 99, ../sass/co-working.scss */
+#coworkingCSS #section2 .bonPlan .couleur {
+  color: white;
+  padding: 10px 30px;
+  height: 178px;
+  text-align: center;
+}
+/* line 107, ../sass/co-working.scss */
+#coworkingCSS #section2 .bonPlan .vert {
+  background-color: #c7d334;
+}
+/* line 111, ../sass/co-working.scss */
+#coworkingCSS #section2 .bonPlan .bleu {
+  background-color: #499f95;
+}
+/* line 116, ../sass/co-working.scss */
+#coworkingCSS #section2 .horaires {
+  background-color: #499f95;
+  color: white;
+  margin-top: 30px;
+  padding: 20px;
+}
+/* line 122, ../sass/co-working.scss */
+#coworkingCSS #section2 .horaires p {
+  margin: 0px;
+}
+/* line 128, ../sass/co-working.scss */
+#coworkingCSS .franchi {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+/* line 132, ../sass/co-working.scss */
+#coworkingCSS .franchi h2 {
+  color: #499f95;
+}
+/* line 137, ../sass/co-working.scss */
+#coworkingCSS .franchi .row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 143, ../sass/co-working.scss */
+#coworkingCSS .franchi .bulle {
+  text-align: center;
+}
+/* line 150, ../sass/co-working.scss */
+#coworkingCSS .franchi .testimonial {
+  padding: 20px 50px;
+  background-color: #499f95;
+}
+/* line 153, ../sass/co-working.scss */
+#coworkingCSS .franchi .testimonial h2, #coworkingCSS .franchi .testimonial h3, #coworkingCSS .franchi .testimonial p {
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  /* line 33, ../sass/co-working.scss */
+  #coworkingCSS {
+    margin-top: 120px;
+  }
+  /* line 164, ../sass/co-working.scss */
+  #coworkingCSS .photoCouverture {
+    height: 500px;
+  }
+  /* line 168, ../sass/co-working.scss */
+  #coworkingCSS #section1 .logoCouleur {
+    height: 250px;
+  }
+  /* line 174, ../sass/co-working.scss */
+  #coworkingCSS #section2 .horaires {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,178 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 33, ../sass/location.scss */
+#locationCSS {
+  margin-top: 50px;
+}
+/* line 37, ../sass/location.scss */
+#locationCSS h1 {
+  font-weight: 400px;
+}
+/* line 41, ../sass/location.scss */
+#locationCSS .photoCouverture {
+  height: 200px;
+  background-image: url("/img/couv location-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 49, ../sass/location.scss */
+#locationCSS #section1 {
+  margin-top: 40px;
+}
+/* line 53, ../sass/location.scss */
+#locationCSS #section1 .logoCouleur {
+  height: 150px;
+  background-image: url("/img/page accueil - logo-01.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/location.scss */
+#locationCSS #section1 .left {
+  text-align: center;
+}
+/* line 65, ../sass/location.scss */
+#locationCSS #section1 .left img {
+  height: 120px;
+}
+/* line 69, ../sass/location.scss */
+#locationCSS #section1 .left .couleur {
+  color: white;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #c3d500;
+}
+/* line 77, ../sass/location.scss */
+#locationCSS #section1 .left .couleur p {
+  margin: 0px 0px 10px 0px;
+}
+/* line 84, ../sass/location.scss */
+#locationCSS #section1 button {
+  color: white;
+  padding: 12px 40px 4px 40px;
+  background-color: #c3d500;
+  border: none;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+/* line 100, ../sass/location.scss */
+#locationCSS #section2 .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 105, ../sass/location.scss */
+#locationCSS #section2 img {
+  width: 100%;
+}
+/* line 109, ../sass/location.scss */
+#locationCSS #section2 a {
+  color: white;
+}
+/* line 118, ../sass/location.scss */
+#locationCSS #section2 .bonPlan .couleur {
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 126, ../sass/location.scss */
+#locationCSS #section2 .bonPlan .negatif {
+  background-color: white;
+  color: #499f95;
+}
+/* line 131, ../sass/location.scss */
+#locationCSS #section2 .bonPlan .bleu {
+  background-color: #c3d500;
+}
+/* line 139, ../sass/location.scss */
+#locationCSS .louez h2 {
+  color: #c3d500;
+}
+/* line 145, ../sass/location.scss */
+#locationCSS #section3 .locationSalle {
+  background-color: #c3d500;
+  text-align: center;
+  color: white;
+}
+/* line 150, ../sass/location.scss */
+#locationCSS #section3 .locationSalle h2 {
+  padding-top: 10px;
+  font-size: 3.3rem;
+}
+/* line 155, ../sass/location.scss */
+#locationCSS #section3 .locationSalle a {
+  color: white;
+}
+/* line 159, ../sass/location.scss */
+#locationCSS #section3 .locationSalle button {
+  width: 100%;
+  height: 80px;
+  background-color: #c3d500;
+  border: none;
+  font-size: 3rem;
+  font-weight: 400;
+}
+/* line 170, ../sass/location.scss */
+#locationCSS #section3 .locationSalle .imgSalle {
+  width: 100%;
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+}
+/* line 180, ../sass/location.scss */
+#locationCSS #section3 #auditorium .imgSalle {
+  background-image: url("../img/auditorium-01.jpg");
+}
+/* line 186, ../sass/location.scss */
+#locationCSS #section3 #cocon .imgSalle {
+  background-image: url("../img/cocon-01.jpg");
+}
+/* line 192, ../sass/location.scss */
+#locationCSS #section3 #ruche .imgSalle {
+  background-image: url("../img/ruche-01.jpg");
+}
+@media screen and (min-width: 992px) {
+  /* line 33, ../sass/location.scss */
+  #locationCSS {
+    margin-top: 120px;
+  }
+  /* line 206, ../sass/location.scss */
+  #locationCSS .photoCouverture {
+    height: 500px;
+  }
+  /* line 210, ../sass/location.scss */
+  #locationCSS #section1 .logoCouleur {
+    height: 250px;
+  }
+  /* line 215, ../sass/location.scss */
+  #locationCSS #section1 .left img {
+    height: 200px;
+  }
+  /* line 222, ../sass/location.scss */
+  #locationCSS #section2 .horaires {
+    margin-top: 0px;
+  }
+  /* line 227, ../sass/location.scss */
+  #locationCSS #section2 .bonPlan .negatif {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

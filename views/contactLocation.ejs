@@ -1,0 +1,120 @@
+<% include head.ejs %>
+<% include header.ejs %>
+
+<div id="contactCSS">
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="photoCouverture col-xs-12">
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+
+	<div class="container">
+		<div class="row">
+			<div class="left col-xs-12 col-sm-12 col-md-4">
+				<img src="./img/page contact enveloppe-01.svg">
+				
+			
+			</div>
+
+<script>
+function $_GET(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+
+	if ( param ) {
+		return vars[param] ? vars[param] : null;	
+	}
+	return vars;
+}
+</script>
+
+
+
+
+			<div class="col-xs-12 col-sm-12 col-md-8">
+
+				<h2>COMMENT NOUS CONTACTER</h2>
+
+
+				<h3>Le FabLab, le coworking et la location de salles by IndeLab</h3>
+				<p>07 69 56 14 29 - indelab@lafabrique-bethune.fr</p>
+
+
+				<form action="/contactLocation" id="contact-form" method="post" role="form">
+
+
+                        <fieldset>
+
+                        	<label>Prénom et Nom</label>
+                         	<input id="name" name="name" type="text" placeholder="Bruce Wayne"required="required">
+
+                         	<label>Adresse mail</label>
+                         	<input id="email" name="email" type="email" placeholder="Votre adresse mail ici" required="required">
+
+                         	<label>Numéro de téléphone</label>
+                         	<input id="phone" name="phone" type="tel" placeholder="+33 6 01 02 03 04" required="required">
+
+                         	<label>Société</label>
+                         	<input id="societe" name="societe" type="text" placeholder="SARL Machin" required="required">
+
+                         	<label>Sujet</label>
+                         	
+                         	<select name="subject" id="subject">
+					          	<option value="auditorium">Location de l'auditorium</option>
+					          	<option value="cocon">Location du cocon</option>
+					        	<option value="ruche">Location de la ruche</option>
+					        </select>
+
+                         	<label>Message</label>
+                         	<textarea id="message" name="message" placeholder="Bonjour, je souhaiterais réserver telle salle, tel jour, de telle heure à telle heure." rows="3" required="required"></textarea>
+                         	<input type="submit" value="Hop, envoyer" class="boutonEnvoi">
+                        </fieldset>
+                    </form>
+
+
+                    <p><%=result%></p>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<script>var salle = $_GET('salle');
+console.log("salle : ");
+console.log(salle);
+
+	if (salle=="auditorium") {
+		$('#subject option[value="auditorium"]').attr("selected","selected");
+	}
+	if (salle=="cocon") {
+		$('#subject option[value="cocon"]').attr("selected","selected");
+		console.log("work");
+	}
+	if (salle=="ruche") {
+		$('#subject option[value="ruche"]').attr("selected","selected");
+	}
+
+
+</script>
+
+
+
+<% include footer.ejs %>

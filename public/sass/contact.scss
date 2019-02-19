@@ -1,0 +1,210 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 400;
+    src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Fabrique;
+    src: url("../fonts/UniNeue-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 700;
+    src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+
+
+
+$font-family: 'Fabrique', sans-serif;
+$vert : #c3d500;
+$rose : #fc466b;
+$bleu: rgb(73,159,149);
+
+
+
+#contactCSS {
+
+    margin-top: 50px;
+
+    h1 {
+        font-weight: 400px;
+    }
+
+    .photoCouverture {
+        height: 200px;
+        background-image: url('/img/couv contact-01.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section1 {
+
+        margin-top: 40px;
+
+        .logoCouleur {
+            height: 150px;
+            background-image: url('/img/page accueil - logo-01.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 20px;
+        }
+
+        .left {
+            text-align: center;
+
+            img {
+            	height: 120px;
+            }
+
+            .couleur {
+                color: white;
+                padding: 10px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+
+                background-color: $vert;
+
+                p {
+                    margin: 0px;
+                }
+            }
+        }
+
+
+        button {
+        
+        	color: white;
+        	padding: 12px 40px 4px 40px;
+        	background-color: $vert;
+        	border: none;
+        	font-weight: 400;
+        	font-size: 3rem;
+        	margin-top: 30px;
+        }
+
+    }
+
+    #section2 {
+
+    	margin-bottom: 50px;
+
+        .row {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        img {
+        	width: 100%;
+        	margin-top: 40px;
+        	margin-bottom: 40px; 
+        }
+
+        h2 {
+        	color: $vert;
+        }
+
+
+
+
+    }
+
+        h3 {
+        	margin-top: 50px;
+        }
+
+
+
+
+    fieldset {
+
+    	margin-top: 30px;
+
+    	label {
+    		display: block;
+    		font-style: normal;
+    		margin-bottom: 10px;
+    	}
+
+    	input {
+    		display: block;
+    		background-color: rgb(240, 240, 240);
+    		width: 100%;
+    		height: 50px;
+    		border: none;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    		margin-bottom: 20px;
+    	}
+
+    	textarea {
+    		display: block;
+    		width: 100%;
+    		padding-left: 15px;
+    		padding-top: 15px;
+    		background-color: rgb(240,240,240);
+    		border: none;
+    		height: 250px;
+    		margin-bottom: 30px;
+
+    	}
+
+    	.boutonEnvoi {
+    		background-color: $vert;
+    		font-weight: 400;
+    		color: white;
+    		font-size: 2rem;
+    	}
+    }
+
+    @media screen and (min-width: 992px)
+    {
+        margin-top: 120px;
+
+        .photoCouverture {
+            height: 500px;
+        }
+        #section1 {
+            .logoCouleur {
+                height: 250px;
+            }
+        }
+        #section2 {
+            
+            .horaires {
+                margin-top: 0px;
+            }
+
+            .bonPlan {
+            	.negatif {
+			      	padding-top: 150px;
+			      	padding-left: 40px;
+			      	padding-right: 40px;
+			    }
+        
+            	
+            }
+        }
+
+        .left {
+        	text-align: center;
+
+        	img {
+        		margin-top: 20px;
+        	}
+        }
+
+
+    }
+
+
+}

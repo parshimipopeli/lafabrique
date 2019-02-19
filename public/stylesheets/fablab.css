@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 33, ../sass/fablab.scss */
+#fablabCSS {
+  margin-top: 50px;
+}
+/* line 37, ../sass/fablab.scss */
+#fablabCSS h1 {
+  font-weight: 400px;
+}
+/* line 41, ../sass/fablab.scss */
+#fablabCSS .photoCouverture {
+  height: 200px;
+  background-image: url("/img/couv fablab-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 49, ../sass/fablab.scss */
+#fablabCSS #section1 {
+  margin-top: 40px;
+}
+/* line 53, ../sass/fablab.scss */
+#fablabCSS #section1 .logoCouleur {
+  height: 150px;
+  background-image: url("/img/page accueil - logo-01.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/fablab.scss */
+#fablabCSS #section1 .left {
+  text-align: center;
+}
+/* line 65, ../sass/fablab.scss */
+#fablabCSS #section1 .left img {
+  height: 120px;
+}
+/* line 69, ../sass/fablab.scss */
+#fablabCSS #section1 .left .couleur {
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #159d92;
+}
+/* line 76, ../sass/fablab.scss */
+#fablabCSS #section1 .left .couleur p {
+  margin: 0px;
+}
+/* line 82, ../sass/fablab.scss */
+#fablabCSS #section1 span {
+  color: #159d92;
+}
+/* line 86, ../sass/fablab.scss */
+#fablabCSS #section1 button {
+  color: white;
+  padding: 12px 40px 4px 40px;
+  background-color: #159d92;
+  border: none;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 50px;
+}
+/* line 101, ../sass/fablab.scss */
+#fablabCSS #section2 .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 106, ../sass/fablab.scss */
+#fablabCSS #section2 img {
+  width: 100%;
+}
+/* line 115, ../sass/fablab.scss */
+#fablabCSS #section2 .bonPlan .couleur {
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 123, ../sass/fablab.scss */
+#fablabCSS #section2 .bonPlan .negatif {
+  background-color: white;
+  color: #159d92;
+}
+/* line 128, ../sass/fablab.scss */
+#fablabCSS #section2 .bonPlan .bleu {
+  background-color: #159d92;
+}
+/* line 133, ../sass/fablab.scss */
+#fablabCSS #section2 .horaires {
+  background-color: #159d92;
+  color: white;
+  margin-top: 30px;
+  padding: 20px;
+}
+/* line 139, ../sass/fablab.scss */
+#fablabCSS #section2 .horaires p {
+  margin: 0px;
+}
+/* line 146, ../sass/fablab.scss */
+#fablabCSS .horaires {
+  background-color: #159d92;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 992px) {
+  /* line 33, ../sass/fablab.scss */
+  #fablabCSS {
+    margin-top: 120px;
+  }
+  /* line 159, ../sass/fablab.scss */
+  #fablabCSS .photoCouverture {
+    height: 500px;
+  }
+  /* line 163, ../sass/fablab.scss */
+  #fablabCSS #section1 .logoCouleur {
+    height: 250px;
+  }
+  /* line 169, ../sass/fablab.scss */
+  #fablabCSS #section2 .horaires {
+    margin-top: 0px;
+  }
+  /* line 174, ../sass/fablab.scss */
+  #fablabCSS #section2 .bonPlan .negatif {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

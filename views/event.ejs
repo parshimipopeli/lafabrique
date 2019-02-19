@@ -1,0 +1,342 @@
+<% include head.ejs %>
+<% include header.ejs %>
+
+<div id="eventCSS">
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="photoCouverture col-xs-12">
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container" id="section1">
+		<div class="row">
+			<div class="left col-xs-12 col-sm-12 col-md-4">
+				<img src="./img/page event-01.svg">
+
+				<div class="couleur vert">
+						<h2>Bon plan !</h2>
+						<p>L’apéro-lab le premier jeudi de chaque mois à partir de 18h, est un temps gratuit pour découvrir ou échanger sur vos projets, vos envies, vos interrogations.<span> Ouvert à tous</span></p>
+				</div>
+			</div>
+			
+
+
+
+
+
+			<div class="col-xs-12 col-sm-12 col-md-8">
+
+				<h1>LES ÉVÉNEMENTS</h1>
+
+				<p>Durant toute l’année, les partenaires Béthune Smart City organisent des animations et ateliers autour de thématiques spécifiques. Ce peut être des débats autour des grands enjeux de notre territoire, des démonstrations de technologie innovante, des ateliers d’apprentissage ou encore des conférences.</p>
+
+				<p>Venez participer aux événements organisés par les partenaires et acteurs de Béthune Smart City.</p>
+
+				<button>Calendrier des événements</button>
+
+
+			</div>
+		</div>
+
+	</div>
+
+
+<script>
+	function $_GET(param) {
+		var vars = {};
+		window.location.href.replace( location.hash, '' ).replace( 
+			/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+			function( m, key, value ) { // callback
+				vars[key] = value !== undefined ? value : '';
+			}
+		);
+
+		if ( param ) {
+			return vars[param] ? vars[param] : null;	
+		}
+		return vars;
+	}
+</script>
+
+
+	<form>
+		<p id="fablabCheckText">Fablab</p>
+		<input class="sortCheck" type="checkbox" id="fablabCheck" name="sort" value="sort"/>
+		<p id="bookCheckText">Bookkafé</p>
+        <input class="sortCheck" type="checkbox" id="bookCheck" name="sort" value="sort"/>
+        <p id="smartCheckText">Smart-City</p>
+        <input class="sortCheck" type="checkbox" id="smartCheck" name="sort" value="sort"/>
+    </form>
+
+
+<script>
+
+	
+
+
+	$('.sortCheck').click(function(){
+		console.log('fablab');
+
+		if (document.getElementById("bookCheck").checked == false &&document.getElementById("smartCheck").checked == false && document.getElementById("fablabCheck").checked == false ) {
+			$('.Fablab').show();
+			$('.Bookkafé').show();
+			$('.Smart-City').show();
+
+		} else if (document.getElementById("fablabCheck").checked == true && document.getElementById("bookCheck").checked == false &&document.getElementById("smartCheck").checked == false){
+			$('.Fablab').show();
+			$('.Bookkafé').hide();
+			$('.Smart-City').hide();
+
+		} else if (document.getElementById("fablabCheck").checked == false && document.getElementById("bookCheck").checked == true &&document.getElementById("smartCheck").checked == false){
+			$('.Fablab').hide();
+			$('.Bookkafé').show();
+			$('.Smart-City').hide();
+
+		} else if (document.getElementById("fablabCheck").checked == false && document.getElementById("bookCheck").checked == false &&document.getElementById("smartCheck").checked == true){
+			$('.Fablab').hide();
+			$('.Bookkafé').hide();
+			$('.Smart-City').show();
+
+		} else if (document.getElementById("fablabCheck").checked == true && document.getElementById("bookCheck").checked == true &&document.getElementById("smartCheck").checked == false){
+			$('.Fablab').show();
+			$('.Bookkafé').show();
+			$('.Smart-City').hide();
+
+		} else if (document.getElementById("fablabCheck").checked == true && document.getElementById("bookCheck").checked == false &&document.getElementById("smartCheck").checked == true){
+			$('.Fablab').show();
+			$('.Bookkafé').hide();
+			$('.Smart-City').show();
+
+		} else if (document.getElementById("fablabCheck").checked == false && document.getElementById("bookCheck").checked == true &&document.getElementById("smartCheck").checked == true){
+			$('.Fablab').hide();
+			$('.Bookkafé').show();
+			$('.Smart-City').show();
+
+		} else if (document.getElementById("fablabCheck").checked == true && document.getElementById("bookCheck").checked == true &&document.getElementById("smartCheck").checked == true){
+			$('.Fablab').show();
+			$('.Bookkafé').show();
+			$('.Smart-City').show();
+
+		} 
+
+
+
+	});
+
+
+</script>
+
+	<div class="container" id="listEvent">
+
+ 
+			
+
+				
+
+	</div>
+
+
+
+
+</div>
+
+<% (function(){
+					  if (typeof Object.defineProperty === 'function'){
+					    try{Object.defineProperty(Array.prototype,'sortBy',{value:sb}); }catch(e){}
+					  }
+					  if (!Array.prototype.sortBy) Array.prototype.sortBy = sb;
+
+					  function sb(f){
+					    for (var i=this.length;i;){
+					      var o = this[--i];
+					      this[i] = [].concat(f.call(o,o,i),o);
+					    }
+					    this.sort(function(a,b){
+					      for (var i=0,len=a.length;i<len;++i){
+					        if (a[i]!=b[i]) return a[i]<b[i]?-1:1;
+					      }
+					      return 0;
+					    });
+					    for (var i=this.length;i;){
+					      this[--i]=this[i][this[i].length-1];
+					    }
+					    return this;
+					  }
+					})();
+
+					%>
+
+					<script>
+
+					var i = 0;
+
+					<%
+
+					allevents.sortBy(function(o){ return o.date });
+
+					for(var index in allevents) {
+                    var affichEvent = allevents[index];
+
+                    var date = affichEvent.dataValues.date.toString();
+                    date = date.substring(0,15);
+                    
+
+
+            
+		            date = date.split(' ');
+		            switch (date[0]) {
+					case 'Mon':
+					    date[0]='Lundi';
+					    break;
+
+					case 'Tue':
+					    date[0]='Mardi';
+					    break;
+
+					case 'Wed':
+					    date[0]='Mercredi';
+					    break;
+
+					case 'Thu':
+					    date[0]='Jeudi';
+					    break;
+
+					case 'Fri':
+					    date[0]='Vendredi';
+					    break;
+
+					case 'Sat':
+					    date[0]='Samedi';
+					    break;
+
+					case 'Sun':
+					    date[0]='Dimanche';
+					    break;
+
+					  default:
+					    date[0]='';
+					}
+
+
+					switch (date[1]) {
+					case 'Jan':
+					    date[1]='01';
+					    break;
+
+					case 'Feb':
+					    date[1]='02';
+					    break;
+
+					case 'Mar':
+					    date[1]='03';
+					    break;
+
+					case 'Apr':
+					    date[1]='04';
+					    break;
+
+					case 'May':
+					    date[1]='05';
+					    break;
+
+					case 'Jun':
+					    date[1]='06';
+					    break;
+
+					case 'Jul':
+					    date[1]='07';
+					    break;
+
+					case 'Aug':
+					    date[1]='08';
+					    break;
+
+					case 'Sep':
+					    date[1]='09';
+					    break;
+
+					case 'Oct':
+					    date[1]='10';
+					    break;
+
+
+					case 'Nov':
+					    date[1]='11';
+					    break;
+
+					case 'Dec':
+					    date[1]='12';
+					    break;
+
+					  default:
+					    
+					}
+
+					
+
+		            
+
+					var jour = date[0];
+		            date =date[2]+'/'+date[1]+'/'+date[3];
+
+		            var time = affichEvent.dataValues.time.toString();
+                    time = time.substring(0,5);
+
+                    var style;
+                    if (affichEvent.dataValues.photo == "img/logoLaFabrique.svg") {
+                    	style = "contain";
+                    } else {
+                    	style = "cover";
+                    }
+
+
+
+		            
+
+                    %>
+
+
+
+
+                    listEvent.innerHTML += "<div class=\"row eventUnique <%= affichEvent.dataValues.organisateur  %>\">"+
+                            "<div class=\"col-lg-3 photoEvent\" style=\"background-image: url('<%= affichEvent.dataValues.photo%>'); background-size : <%=style%>;  \"></div>"+
+                            "<div class=\"col-lg-7 infosEvent\">"+
+                                "<h3 class=\"titreEvent\"><%= affichEvent.dataValues.titre %></h3>"+
+                                "<div class=\"descriptionEvent\" id=\""+i+"\"></div>"+
+                                "<a href=\"<%= affichEvent.dataValues.lienFacebook %>\">Voir l'événement sur Facebook</a>"+
+                            "</div>"+
+                            "<div class=\"dateEvent col-lg-2\" >"+
+                            	"<p><%=jour%></p><p><%=date%></p><p><%=time%></p>"+
+                            	"<p>Durée : <%=affichEvent.dataValues.timeend%>"+
+                        "</div>";
+
+
+
+                        $('#' + i).append( "<p><%- affichEvent.dataValues.description %></p>" );
+				i++
+
+                  
+
+                    <%
+
+
+                	}
+
+				%>
+
+
+
+				  </script>
+
+
+
+
+<% include footer.ejs %>

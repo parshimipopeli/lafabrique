@@ -1,0 +1,74 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 400;
+    src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Fabrique;
+    src: url("../fonts/UniNeue-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 700;
+    src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+
+footer {
+
+    text-align: center;
+    font-weight: 400;
+    margin-top: 60px;
+
+
+
+
+    .container-fluid {
+        background-color: black;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        img {
+            margin: 20px;
+
+        }
+
+        .social {
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            img {
+                margin-top: 10px;
+            }
+
+            li {
+                display: inline-block;
+            }
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+
+        }
+
+    }
+}

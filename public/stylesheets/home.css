@@ -1,0 +1,120 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 33, ../sass/home.scss */
+#homeCSS {
+  margin-top: 50px;
+}
+/* line 37, ../sass/home.scss */
+#homeCSS h1 {
+  font-weight: 400px;
+}
+/* line 41, ../sass/home.scss */
+#homeCSS .row {
+  margin-bottom: 55px;
+}
+/* line 45, ../sass/home.scss */
+#homeCSS .photoCouverture {
+  height: 200px;
+  background-image: url("/img/couv accueil-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 53, ../sass/home.scss */
+#homeCSS #section1 {
+  margin-top: 40px;
+}
+/* line 57, ../sass/home.scss */
+#homeCSS #section1 .logoCouleur {
+  height: 150px;
+  background-image: url("/img/page accueil - logo-01.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+/* line 69, ../sass/home.scss */
+#homeCSS .plan img {
+  width: 100%;
+}
+/* line 74, ../sass/home.scss */
+#homeCSS .horaires {
+  background-color: #c3d500;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 82, ../sass/home.scss */
+#homeCSS .horaires .brochure {
+  font-weight: 400;
+  color: white;
+  padding-top: 150px;
+}
+/* line 87, ../sass/home.scss */
+#homeCSS .horaires .brochure p {
+  font-size: 2rem;
+}
+/* line 94, ../sass/home.scss */
+#homeCSS #sectionLogos {
+  text-align: center;
+}
+/* line 97, ../sass/home.scss */
+#homeCSS #sectionLogos .picto {
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 102, ../sass/home.scss */
+#homeCSS #sectionLogos .picto img {
+  vertical-align: text-bottom;
+}
+/* line 107, ../sass/home.scss */
+#homeCSS #sectionLogos .txtHome {
+  margin-bottom: 50px;
+}
+/* line 111, ../sass/home.scss */
+#homeCSS #sectionLogos .logoLogos {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  /* line 33, ../sass/home.scss */
+  #homeCSS {
+    margin-top: 120px;
+  }
+  /* line 121, ../sass/home.scss */
+  #homeCSS .photoCouverture {
+    height: 500px;
+  }
+  /* line 125, ../sass/home.scss */
+  #homeCSS #section1 .logoCouleur {
+    height: 250px;
+  }
+  /* line 129, ../sass/home.scss */
+  #homeCSS #sectionLogos {
+    text-align: left;
+  }
+  /* line 132, ../sass/home.scss */
+  #homeCSS #sectionLogos .logoLogos {
+    display: block;
+    text-align: center;
+  }
+  /* line 137, ../sass/home.scss */
+  #homeCSS #sectionLogos .picto {
+    text-align: center;
+  }
+}

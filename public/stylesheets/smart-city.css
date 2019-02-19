@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 33, ../sass/smart-city.scss */
+#smartCityCSS {
+  margin-top: 50px;
+}
+/* line 37, ../sass/smart-city.scss */
+#smartCityCSS h1 {
+  font-weight: 400px;
+}
+/* line 41, ../sass/smart-city.scss */
+#smartCityCSS .photoCouverture {
+  height: 200px;
+  background-image: url("/img/couv smart city-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 49, ../sass/smart-city.scss */
+#smartCityCSS #section1 {
+  margin-top: 40px;
+}
+/* line 53, ../sass/smart-city.scss */
+#smartCityCSS #section1 .logoCouleur {
+  height: 150px;
+  background-image: url("/img/page accueil - logo-01.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/smart-city.scss */
+#smartCityCSS #section1 .B {
+  text-align: center;
+}
+/* line 66, ../sass/smart-city.scss */
+#smartCityCSS #section1 span {
+  color: #c7d334;
+}
+/* line 72, ../sass/smart-city.scss */
+#smartCityCSS .pictos {
+  text-align: center;
+}
+/* line 75, ../sass/smart-city.scss */
+#smartCityCSS .pictos img {
+  margin: 30px;
+}
+/* line 80, ../sass/smart-city.scss */
+#smartCityCSS .horaires {
+  background-color: #c7d334;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 90, ../sass/smart-city.scss */
+#smartCityCSS #sectionLogos {
+  text-align: center;
+}
+/* line 93, ../sass/smart-city.scss */
+#smartCityCSS #sectionLogos .picto {
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 98, ../sass/smart-city.scss */
+#smartCityCSS #sectionLogos .picto img {
+  vertical-align: text-bottom;
+}
+/* line 103, ../sass/smart-city.scss */
+#smartCityCSS #sectionLogos .logoLogos {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  /* line 33, ../sass/smart-city.scss */
+  #smartCityCSS {
+    margin-top: 120px;
+  }
+  /* line 113, ../sass/smart-city.scss */
+  #smartCityCSS .photoCouverture {
+    height: 500px;
+  }
+  /* line 117, ../sass/smart-city.scss */
+  #smartCityCSS #section1 .logoCouleur {
+    height: 250px;
+  }
+  /* line 121, ../sass/smart-city.scss */
+  #smartCityCSS #sectionLogos {
+    text-align: left;
+  }
+  /* line 124, ../sass/smart-city.scss */
+  #smartCityCSS #sectionLogos .logoLogos {
+    display: block;
+    text-align: center;
+  }
+  /* line 129, ../sass/smart-city.scss */
+  #smartCityCSS #sectionLogos .picto {
+    text-align: center;
+  }
+}

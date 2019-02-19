@@ -1,0 +1,51 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 400;
+    src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Fabrique;
+    src: url("../fonts/UniNeue-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Fabrique;
+    font-weight: 700;
+    src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+
+
+$font-family: 'Fabrique', sans-serif;
+$gris : #2d3436;
+$rose : #fc466b;
+$bleu: #3f5efb;
+
+
+
+body {
+    font-family: $font-family;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+
+
+@media screen and (min-width: 992px)
+{
+
+    
+}

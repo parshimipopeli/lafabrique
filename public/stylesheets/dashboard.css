@@ -1,0 +1,25 @@
+/* line 1, ../sass/dashboard.scss */
+.container {
+  margin-top: 120px !important;
+}
+
+/* line 10, ../sass/dashboard.scss */
+#contenuDashboard input {
+  display: block;
+  margin-bottom: 40px;
+  padding: 10px;
+  width: 100%;
+}
+/* line 18, ../sass/dashboard.scss */
+#contenuDashboard textarea {
+  display: block;
+  margin-bottom: 40px;
+  padding: 10px;
+  width: 100%;
+}
+/* line 25, ../sass/dashboard.scss */
+#contenuDashboard label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

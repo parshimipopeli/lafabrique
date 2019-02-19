@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 24, ../sass/footer.scss */
+footer {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 60px;
+}
+/* line 33, ../sass/footer.scss */
+footer .container-fluid {
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 39, ../sass/footer.scss */
+footer .container-fluid img {
+  margin: 20px;
+}
+/* line 44, ../sass/footer.scss */
+footer .container-fluid .social {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 49, ../sass/footer.scss */
+footer .container-fluid .social img {
+  margin-top: 10px;
+}
+/* line 53, ../sass/footer.scss */
+footer .container-fluid .social li {
+  display: inline-block;
+}
+/* line 58, ../sass/footer.scss */
+footer .container-fluid a {
+  color: white;
+}
+/* line 62, ../sass/footer.scss */
+footer .container-fluid a:hover {
+  color: white;
+}
+/* line 66, ../sass/footer.scss */
+footer .container-fluid ul {
+  list-style: none;
+  padding: 0;
+}

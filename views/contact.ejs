@@ -1,0 +1,150 @@
+<% include head.ejs %>
+<% include header.ejs %>
+
+<div id="contactCSS">
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="photoCouverture col-xs-12">
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+
+	<div class="container">
+		<div class="row">
+			<div class="left col-xs-12 col-sm-12 col-md-4">
+				<img src="./img/page contact enveloppe-01.svg">
+				
+			
+			</div>
+
+
+
+			<div class="col-xs-12 col-sm-12 col-md-8">
+
+				<h2>COMMENT NOUS CONTACTER</h2>
+
+				<h3>Service Smart City - Ville de Béthune</h3>
+				<p> Nicolas BATAILLON : 07 71 37 63 64</br>n.bataillon@ville-bethune.fr</p>
+
+
+				<h3>Le FabLab, le coworking et la location de salles by IndeLab</h3>
+				<p>07 69 56 14 29 - indelab@lafabrique-bethune.fr</p>
+
+				<h3>Le Bookkafé</h3>
+				<p>07 67 54 94 44 - bookkafe@lafabrique-bethune.fr</p>
+
+
+				</br></br></br>
+				<p>Sinon, vous pouvez aussi remplir directement ce formulaire :</p>
+
+
+
+				<form action="/contact" id="contact-form" method="post" role="form">
+
+
+                        <fieldset>
+
+                        	<label>Prénom et Nom</label>
+                         	<input id="name" name="name" type="text" placeholder="Bruce Wayne"required="required">
+
+                         	<label>Adresse mail</label>
+                         	<input id="email" name="email" type="email" placeholder="Votre adresse mail ici" required="required">
+
+                         	<label>Sujet</label>
+                         	<input id="subject" name="subject" type="text" placeholder="Nouvelle cape" required="required">
+
+                         	<label>Message</label>
+                         	<textarea id="message" name="message" placeholder="Appelez Robin à la rescousse" rows="3" required="required"></textarea>
+                         	<input type="submit" value="Hop, envoyer" class="boutonEnvoi">
+                        </fieldset>
+                    </form>
+
+
+                    <p><%=result%></p>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container" id="section1">
+		<div class="row">
+			<div class="left col-xs-12 col-sm-12 col-md-4">
+				<img src="./img/page contact-01.svg">
+				
+			
+			</div>
+
+
+
+			<div class="col-xs-12 col-sm-12 col-md-8">
+
+				<h1>OÙ NOUS TROUVER</h1>
+
+				<p>La Fabrique</br>6 rue Sadi Carnot</br>62400 Béthune</p>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container" id="section2">
+		<div class="row">
+
+			<div class="col-xs-12">
+				<img src="./img/page contact carte-01.png">
+			</div>
+
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-offset-4 col-md-8">
+				<h2>Béthune c'est :</h2>
+				<h3>En train</h3>
+				<p>1h20 en TGV depuis Paris</p>
+				<p>40 min en TER depuis Lille</p>
+				<h3>En voiture</h3>
+				<p>220km depuis Paris</p>
+				<p>40km depuis Lille (Sortie directe d'autoroute A26</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="./img/page contact plan bethune-01.png">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-offset-4 col-md-8">
+				<h2>Stationnement</h2>
+				<h3>Parking souterrain Grand'Place</h3>
+				<p>à 2 minuntes à pied (payant)</p>
+				<h3>Parking Place du Général De Gaulle</h3>
+				<p>à 9 minutes à pied (gratuit)</p>
+			</div>
+		</div>
+
+
+
+
+	</div>
+</div>
+
+
+
+
+<% include footer.ejs %>

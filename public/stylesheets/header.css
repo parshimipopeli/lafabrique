@@ -1,0 +1,99 @@
+@font-face {
+  font-family: circular;
+  font-weight: 400;
+  src: url("../fonts/circular-book.otf") format("opentype");
+}
+@font-face {
+  font-family: circular;
+  src: url("../fonts/circular-medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: circular;
+  font-weight: 700;
+  src: url("../fonts/circular-bold.otf") format("opentype");
+}
+@font-face {
+  font-family: circular;
+  font-weight: 900;
+  src: url("../fonts/circular-black.otf") format("opentype");
+}
+/* line 36, ../sass/header.scss */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  height: 50px;
+  padding-top: 5px;
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+}
+/* line 49, ../sass/header.scss */
+header img {
+  height: 40px;
+}
+/* line 53, ../sass/header.scss */
+header .menu {
+  display: none;
+}
+/* line 58, ../sass/header.scss */
+header .dropdown {
+  text-align: right;
+  padding-top: 10px;
+}
+/* line 62, ../sass/header.scss */
+header .dropdown button {
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+}
+/* line 72, ../sass/header.scss */
+header .dropdown-menu {
+  right: 0;
+  width: 100%;
+  min-width: 250px;
+}
+/* line 77, ../sass/header.scss */
+header .dropdown-menu li {
+  padding: 10px;
+}
+@media screen and (min-width: 992px) {
+  /* line 36, ../sass/header.scss */
+  header {
+    height: 120px;
+  }
+  /* line 89, ../sass/header.scss */
+  header img {
+    height: 80px;
+    padding-left: 50px;
+    margin-top: 10px;
+  }
+  /* line 95, ../sass/header.scss */
+  header .dropdown {
+    display: none;
+  }
+  /* line 99, ../sass/header.scss */
+  header .menu {
+    display: block;
+    text-align: right;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+  /* line 106, ../sass/header.scss */
+  header .menu li {
+    display: inline;
+    padding-right: 50px;
+  }
+  /* line 110, ../sass/header.scss */
+  header .menu li a {
+    color: black;
+  }
+  /* line 114, ../sass/header.scss */
+  header .menu li a:hover {
+    color: black;
+  }
+}

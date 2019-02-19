@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Fabrique;
+  font-weight: 400;
+  src: url("../fonts/Jaapokki-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Fabrique;
+  src: url("../fonts/UniNeue-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Fabrique;
+  font-weight: 700;
+  src: url("../fonts/UniNeue-HEavyItalic.otf") format("opentype");
+}
+/* line 32, ../sass/screen.scss */
+body {
+  font-family: "Fabrique", sans-serif;
+  font-weight: 300;
+}
+
+/* line 37, ../sass/screen.scss */
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+/* line 41, ../sass/screen.scss */
+p {
+  font-size: 1.8rem;
+}
